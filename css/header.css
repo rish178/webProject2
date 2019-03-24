@@ -1,0 +1,23 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.top-buttons{
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: #112fb4;
+  color: white;
+}
+.logo-title{
+font-family: 'Satisfy', cursive;
+font-size: 50px;
+color: #112fb4;
+margin: auto;
+text-decoration: none;
+margin: 10px 10px 0px 10px;
+}
+.middleText{
+    font-family: 'Marck Script', cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
+  }
