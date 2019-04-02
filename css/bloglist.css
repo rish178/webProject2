@@ -1,6 +1,6 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 40%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
@@ -61,4 +61,14 @@ body {
     height: 100%;
     width: 100%;
 
+}
+
+.trash-icon{
+    float:right;
+    margin: 10px -10px; 
+}
+
+.more-icon{
+    float:right;
+    margin-right: -10px;
 }
