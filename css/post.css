@@ -33,4 +33,19 @@
 #likePost{
     float:left;
 }
+
+.likeInfo{
+    padding: 12px 37px 10px 30px;
+    border-radius: 4px;
+}
+
+.editInfo{
+    padding: 10px 10px 10px 15px;
+}
+.editableBlogTitle{
+    border-style: solid;
+    border-width: thin;
+    border-color: pink;
+}
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

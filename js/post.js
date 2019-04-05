@@ -1,7 +1,10 @@
+var likeCounter = 0;
+
 function editPost(){
     
     document.getElementById('blogTitleNew').contentEditable = true;
     document.getElementById("blogTitleNew").style.cursor = "pointer";
+    document.getElementById('blogTitleNew').className = 'editableBlogTitle';
     document.getElementById("blogTitleNew").focus();  
     
     document.getElementById('blogBody').contentEditable = true;
@@ -22,4 +25,15 @@ function savePost(){
    document.getElementById("blogTitleNew").style.cursor = "auto";
    document.getElementById("blogBody").blur();
    document.getElementById("blogTitleNew").blur();
+   document.getElementById('blogTitleNew').className = '';
+}
+
+function likePost(){
+    likeCounter = likeCounter + 1;
+    if(likeCounter == 1){
+        document.getElementById('LikePost').innerHTML = '<i class="fa fa-thumbs-up fa-lg"></i> Liked!';
+        document.getElementById('likeInfo').innerText = '1 person likes this!';
+    }else if(likeCounter > 1){
+        document.getElementById('likeInfo').innerText = likeCounter + ' people have liked this!';
+    }
 }
