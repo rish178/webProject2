@@ -48,4 +48,45 @@
     border-color: pink;
 }
 
+.blogCommentBox{
+    width: 55%;
+    height: 80px;    
+}
+
+.blogTextAreaContnr{
+    margin-bottom: 10px;
+}
+
+.blogCommentContnr{
+    margin-top: 10px;
+}
+
+.commentInfo{
+    padding: 10px 15px;
+}
+
+.blogComment{
+    margin-bottom: 32px;
+}
+
+.blogAllComments{
+    margin-top: 32px;    
+}
+
+.commentsContainer {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #DCDCDC;    
+}
+
+.comment{
+    background-color: white;
+    padding: 30px;
+    margin:20px;
+    
+}
+
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

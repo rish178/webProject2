@@ -1,5 +1,6 @@
 var likeCounter = 0;
 
+//Edit Post functionalities
 function editPost(){
     
     document.getElementById('blogTitleNew').contentEditable = true;
@@ -13,7 +14,7 @@ function editPost(){
     document.getElementById('editPost').innerHTML = 'Save <i class="fa fa-floppy-o fa-lg" ></i>';    
     document.getElementById('editPost').onclick = function() { savePost(); }
 }
-
+//Save Post functionalities
 function savePost(){
    document.getElementById('blogBody').innerHTML = document.getElementById('blogBody').innerHTML;
    document.getElementById('blogTitleNew').innerHTML = document.getElementById('blogTitleNew').innerHTML;
@@ -27,7 +28,7 @@ function savePost(){
    document.getElementById("blogTitleNew").blur();
    document.getElementById('blogTitleNew').className = '';
 }
-
+//Like Post functionalities
 function likePost(){
     likeCounter = likeCounter + 1;
     if(likeCounter == 1){
@@ -36,4 +37,12 @@ function likePost(){
     }else if(likeCounter > 1){
         document.getElementById('likeInfo').innerText = likeCounter + ' people have liked this!';
     }
+}
+//Commentfor Post functionalities
+function addComment(comment){
+    if(document.getElementById('blogAllComments').style.display === 'none'){
+        document.getElementById('blogAllComments').style.display = 'block';
+    }
+    var commentItem = '<p class="comment">'+ comment.value +'</p>';
+    document.getElementById('commentsContainer').innerHTML = document.getElementById('commentsContainer').innerHTML + commentItem;
 }
