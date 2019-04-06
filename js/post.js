@@ -45,4 +45,5 @@ function addComment(comment){
     }
     var commentItem = '<p class="comment">'+ comment.value +'</p>';
     document.getElementById('commentsContainer').innerHTML = document.getElementById('commentsContainer').innerHTML + commentItem;
+    comment.value = '';
 }
