@@ -32,7 +32,7 @@
     font-weight: bold;
     color: #2b312b;
     font-size: 25px;
-    height: 25px;
+    /*height: 25px;*/
     }
 .post-more {
     float: right;
@@ -43,10 +43,6 @@
     padding-bottom: 10px;
     font-size: 30px;
 }
-.post-desc{
-    height: 100px;
-    margin-bottom: 0 !important;
-}
 
 body {
     height: 100%;
@@ -56,6 +52,7 @@ body {
     color: #fff;
     background-color: orange;
     background-size: 2000% 2000%;
+    font-family: Abel;
 }
 .allPostsContainer {
     height: 100%;
@@ -72,3 +69,181 @@ body {
     float:right;
     margin-right: -10px;
 }
+
+/* styles for '...' */ 
+.post-desc {
+    /* hide text if it more than N lines  */
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative; 
+    /* use this value to count block height */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 3.6em; 
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: justify;  
+    /* place for '...' */
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  /* create the ... */
+  .post-desc:before {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+  }
+  /* hide ... if we have text, which is less than or equal to max lines */
+  .post-desc:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: #E8E8E8;
+  }
+
+  textarea{
+    overflow: hidden;
+    background-color: #fefefe;
+  
+  }
+  .container {
+    padding: 16px;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    color:black;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  input {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    overflow: hidden;
+  }
+  /* Add a background color when the inputs get focus */
+  input:focus {
+    background-color: #ddd;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .create-postbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    margin-left:33%;
+  }
+  .signupbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .signHeader{
+    text-align: center;
+    color:black;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .postBtn{
+    background:#cfb53b;
+    color:black;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .joinNow{
+    text-align: center;
+    font-weight: bold;
+    color:black;
+  }
+  .joinNow span{
+    cursor: pointer;
+  
+  }
+  .postButtons{
+    display: block;
+    margin:250px 650px 250px 650px ;
+  }
+  .confYes {
+    background-color: green;
+    color: white;
+    padding: 10px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    float:left;
+    opacity: 0.9;
+  }
+  .confNo {
+    background-color: red;
+    color: white;
+    padding: 10px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    float:right;
+    opacity: 0.9;
+  }
+  .modal-content-conf {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+    color:black;
+    text-align: center;
+    height: 140px;;
+  }
