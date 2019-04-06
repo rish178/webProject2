@@ -40,9 +40,12 @@ function likePost(){
 }
 //Commentfor Post functionalities
 function addComment(comment){
-    if(document.getElementById('blogAllComments').style.display === 'none'){
-        document.getElementById('blogAllComments').style.display = 'block';
+    if(comment.value !== ''){
+        if(document.getElementById('blogAllComments').style.display === 'none'){
+            document.getElementById('blogAllComments').style.display = 'block';
+        }
+        var commentItem = '<p class="comment">'+ comment.value +'</p>';
+        document.getElementById('commentsContainer').innerHTML = document.getElementById('commentsContainer').innerHTML + commentItem;
+        comment.value = '';
     }
-    var commentItem = '<p class="comment">'+ comment.value +'</p>';
-    document.getElementById('commentsContainer').innerHTML = document.getElementById('commentsContainer').innerHTML + commentItem;
 }
