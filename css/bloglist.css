@@ -238,12 +238,26 @@ body {
     float:right;
     opacity: 0.9;
   }
-  .modal-content-conf {
+ .modal-content-conf {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 25%; /* Could be more or less, depending on screen size */
     color:black;
-    text-align: center;
-    height: 140px;;
+	text-align: center;
   }
+	@media only screen and (min-width: 600px) {
+	.modal-content-conf {
+			height: 200px;
+		}
+	}
+	@media only screen and (min-width: 800px) {
+	.modal-content-conf {
+			height: 150px;
+		}
+	}
+	@media only screen and (min-width: 1000px) {
+		.modal-content-conf {
+			height:140px;
+		}	
+	}
