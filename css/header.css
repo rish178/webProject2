@@ -70,6 +70,7 @@ margin: 10px 10px 0px 10px;
   }
   .signHeader{
     text-align: center;
+    color: black;
   }
   .modal {
     display: none; /* Hidden by default */
