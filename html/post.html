@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-        
+
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-    <style>        
-    </style>     
+    <style>
+    </style>
 </head>
 <body>
     <div class="header">
@@ -15,15 +15,62 @@
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore,Imagine,Create</p>
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-    </div>       
+    </div>
+    <div id="signinContent" class="modal">
+      <form class="modal-content">
+        <div class="container">
+          <span class="close">&times;</span>
+          <h1 class="signHeader">Welcome Back !</h1>
+          <hr>
+          <label for="username"><b>User Name</b></label>
+          <input type="text" placeholder="Enter UserName" name="username" required>
 
+          <label for="psw"><b>Password</b></label>
+          <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+          <div>
+            <button id="submit" onclick="display(pass)" type="submit" class="signupbtn">Sign Up</button>
+          </div>
+          <div>
+            <p class="joinNow"> Not a member ? <span id="openform" style="color:dodgerblue">Sign Up</span></p>
+
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <!-- ============== Insert code for Sign Up modal here  ======== -->
+    <div id="signupContent" class="modal">
+      <form class="modal-content">
+        <div class="container">
+          <span id="closesignup" class="close">&times;</span>
+          <h1 class="signHeader">Get Started</h1>
+          <hr>
+          <label for="fullname"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="fullname" required>
+
+          <label for="username"><b>User Name</b></label>
+          <input type="text" placeholder="Enter UserName" name="username" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+
+          <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+          <div>
+            <button id="submit" onclick="display(pass)" type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
             <h id="blogTitleNew" contenteditable="false">The legacy of Jimi Hendrix</h>
         </div>
 
         <div class="blogAuthor">
-            <button id="editPost" class="post-buttons editInfo" name="editPost" onclick="editPost()">Edit 
+            <button id="editPost" class="post-buttons editInfo" name="editPost" onclick="editPost()">Edit
                 <i class="fa fa-pencil-square-o fa-lg" ></i>
             </button>
             <p>Jimi</p>
@@ -44,8 +91,8 @@
 
         <div class="blogAllComments" id="blogAllComments" style="display:none">
             <h4>All Comments</h4>
-            <div class="commentsContainer" id="commentsContainer">                
-            </div>            
+            <div class="commentsContainer" id="commentsContainer">
+            </div>
         </div>
 
     </div>
@@ -53,7 +100,7 @@
     <!-- Insert code for Like button, Comment button, Comment box here-->
 
     <script src="..\js\post.js" defer></script>
-    <script src="..\js\header.js">             
+    <script src="..\js\header.js">
     </script>
-    
+
 </body>
