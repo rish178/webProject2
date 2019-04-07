@@ -1,0 +1,43 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+}
+
+
+
+.create-postbtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-left:33%;
+}
+.postBtn{
+  background:#cfb53b;
+  color:black;
+}
+
+.joinNow{
+  text-align: center;
+    font-weight: bold;
+}
+.joinNow span{
+  cursor: pointer;
+
+}
+.postButtons{
+  display: block;
+  margin:250px 650px 250px 650px ;
+}
+/* Set a style for the rest of the elements besdes the header elements on the index.html page */
